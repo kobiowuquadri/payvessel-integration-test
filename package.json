@@ -7,13 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "server": "node index.js",
-       "dev": "concurrently -n 'server' -c '#32a852' \"nodemon index.js\""
-
+    "dev": "concurrently -n 'server' -c '#32a852' \"nodemon index.js\""
   },
   "keywords": [],
   "author": "Quadri Kobiowu (DevQuat)",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.8",
     "concurrently": "^8.2.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
