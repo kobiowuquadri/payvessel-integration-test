@@ -11,15 +11,15 @@ const payvesselSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  phoneNnumber: {
+  phoneNumber: {
     type: String,
     required: true
   },
-  bankCode: {
+  bankcode: {
     type: Array,
     required: true
   },
-  bussinessid: {
+  businessid: {
     type: String,
     required: true
   },

@@ -16,6 +16,7 @@ const createReservedAccount = async (req, res) => {
         }
       }
     )
+    
 
     console.log(reservedAccount)
 
@@ -23,9 +24,10 @@ const createReservedAccount = async (req, res) => {
       email,
       name,
       phoneNumber,
-      bankCode: ['120001'],
-      bussinessid: 'QUUQSG0Q818D8E4783THCC1XDG',
-      account_type: 'STATIC'
+      bankcode: [process.env.PAYVESSEL_BANKCODE],
+      businessid:process.env.PAYVESSEL_BUSINESSID,
+      account_type: process.env.PAYVESSEL_ACCOUNT_TYPE,
+      bvn: ""
     })
 
     const savedUser = newUser.save()
